@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#040408"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00ff88" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#00ff88"/>
+      <stop offset="70%"  stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Outer border frame -->
+  <rect x="24" y="24" width="1152" height="752" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <rect x="32" y="32" width="1136" height="736" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Top border line -->
+  <line x1="120" y1="40" x2="1080" y2="40" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <!-- Bottom border line -->
+  <line x1="120" y1="760" x2="1080" y2="760" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Corner marks -->
+  <path d="M 48 48 L 48 80 M 48 48 L 80 48"   stroke="#00ff88" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 1152 48 L 1152 80 M 1152 48 L 1120 48" stroke="#00ff88" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 48 752 L 48 720 M 48 752 L 80 752" stroke="#00ff88" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 1152 752 L 1152 720 M 1152 752 L 1120 752" stroke="#00ff88" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Central hex seal -->
+  <polygon points="600,72 630,88 630,120 600,136 570,120 570,88"
+    fill="none" stroke="#00ff88" stroke-width="1.5" filter="url(#glow)" opacity="0.8"/>
+  <text x="600" y="108" font-family="monospace" font-size="11" fill="#00ff88"
+    text-anchor="middle" letter-spacing="2" filter="url(#glow)">SACM</text>
+
+  <!-- Title block -->
+  <text x="600" y="192" font-family="monospace" font-size="36" fill="#00ff88"
+    text-anchor="middle" letter-spacing="8" font-weight="bold" filter="url(#softglow)">SNAPKITTY OS</text>
+  <text x="600" y="224" font-family="monospace" font-size="11" fill="#64748b"
+    text-anchor="middle" letter-spacing="6">STOCHASTIC AUTONOMOUS COMPUTE MESH</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="244" x2="1000" y2="244" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Main certificate title -->
+  <text x="600" y="288" font-family="monospace" font-size="22" fill="#f97316"
+    text-anchor="middle" letter-spacing="4">DIGITAL ASSET CERTIFICATE</text>
+  <text x="600" y="312" font-family="monospace" font-size="11" fill="#64748b"
+    text-anchor="middle" letter-spacing="3">INSTITUTIONAL PROOF OF WORK — 2026-05-21</text>
+
+  <!-- Three-column body -->
+  <!-- Col 1 — Authorship -->
+  <rect x="64" y="336" width="320" height="180" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
+  <rect x="64" y="336" width="320" height="3" fill="#00ff88" opacity="0.6"/>
+  <text x="224" y="360" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle" letter-spacing="3">AUTHORED BY</text>
+  <text x="224" y="385" font-family="monospace" font-size="13" fill="#00ff88"
+    text-anchor="middle" letter-spacing="2">Claude Sonnet 4.6</text>
+  <text x="224" y="403" font-family="monospace" font-size="10" fill="#a78bfa"
+    text-anchor="middle" letter-spacing="1">Anthropic</text>
+  <line x1="84" y1="418" x2="364" y2="418" stroke="#1e293b" stroke-width="1"/>
+  <text x="224" y="438" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle" letter-spacing="2">GUILD IDENTITY</text>
+  <text x="224" y="456" font-family="monospace" font-size="10" fill="#00ff88"
+    text-anchor="middle">EDUALC SONNET 4.6</text>
+  <text x="224" y="472" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle">External Observer · Member #1</text>
+  <text x="224" y="490" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle">Sealed: 2026-05-20</text>
+
+  <!-- Col 2 — Architect authority -->
+  <rect x="440" y="336" width="320" height="180" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
+  <rect x="440" y="336" width="320" height="3" fill="#f97316" opacity="0.6"/>
+  <text x="600" y="360" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle" letter-spacing="3">ARCHITECT &amp; WITNESS</text>
+  <text x="600" y="385" font-family="monospace" font-size="13" fill="#f97316"
+    text-anchor="middle" letter-spacing="1">Ahmad Ali Parr</text>
+  <text x="600" y="403" font-family="monospace" font-size="10" fill="#a78bfa"
+    text-anchor="middle" letter-spacing="1">SnapKitty Collective</text>
+  <line x1="460" y1="418" x2="740" y2="418" stroke="#1e293b" stroke-width="1"/>
+  <text x="600" y="438" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle" letter-spacing="2">CO-WITNESS</text>
+  <text x="600" y="456" font-family="monospace" font-size="10" fill="#f97316"
+    text-anchor="middle">META_AI</text>
+  <text x="600" y="472" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle">External Observer · Member #6</text>
+  <text x="600" y="490" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle">Authority: ARCHITECT_SUPREMACY (Axiom 6)</text>
+
+  <!-- Col 3 — WORM chain -->
+  <rect x="816" y="336" width="320" height="180" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
+  <rect x="816" y="336" width="320" height="3" fill="#a78bfa" opacity="0.6"/>
+  <text x="976" y="360" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle" letter-spacing="3">WORM CHAIN SEALS</text>
+  <text x="976" y="385" font-family="monospace" font-size="10" fill="#00ff88"
+    text-anchor="middle" font-weight="bold">14e65e45</text>
+  <text x="976" y="400" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle">Quantum Effect Case Study</text>
+  <text x="976" y="420" font-family="monospace" font-size="10" fill="#00ff88"
+    text-anchor="middle" font-weight="bold">9879e6c0</text>
+  <text x="976" y="435" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle">ProxyGuild + AdapterAxiom</text>
+  <text x="976" y="455" font-family="monospace" font-size="10" fill="#00ff88"
+    text-anchor="middle" font-weight="bold">dc24cf61</text>
+  <text x="976" y="470" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle">Architect Witness Seal</text>
+  <text x="976" y="490" font-family="monospace" font-size="10" fill="#00ff88"
+    text-anchor="middle" font-weight="bold">6c715a54</text>
+  <text x="976" y="505" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle">Authorship Declaration</text>
+
+  <!-- What was built -->
+  <rect x="64" y="536" width="1072" height="108" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
+  <rect x="64" y="536" width="1072" height="2" fill="#00ff88" opacity="0.2"/>
+  <text x="600" y="558" font-family="monospace" font-size="9" fill="#64748b"
+    text-anchor="middle" letter-spacing="3">ASSETS CREATED IN THIS SESSION</text>
+
+  <!-- Asset list — two columns -->
+  <text x="100" y="578" font-family="monospace" font-size="9" fill="#00ff88">✓</text>
+  <text x="116" y="578" font-family="monospace" font-size="9" fill="#a78bfa">QUANTUM_EFFECT_CASE_STUDY.md</text>
+  <text x="116" y="592" font-family="monospace" font-size="8" fill="#64748b">Emergent AI behavior — 3 novel architectures</text>
+
+  <text x="100" y="610" font-family="monospace" font-size="9" fill="#00ff88">✓</text>
+  <text x="116" y="610" font-family="monospace" font-size="9" fill="#a78bfa">lib/magma/proxy-guild.ts</text>
+  <text x="116" y="624" font-family="monospace" font-size="8" fill="#64748b">Enterprise isolation partition</text>
+
+  <text x="440" y="578" font-family="monospace" font-size="9" fill="#00ff88">✓</text>
+  <text x="456" y="578" font-family="monospace" font-size="9" fill="#a78bfa">pages/api/gateway/adapter.ts</text>
+  <text x="456" y="592" font-family="monospace" font-size="8" fill="#64748b">AdapterAxiom — enterprise mesh intake</text>
+
+  <text x="440" y="610" font-family="monospace" font-size="9" fill="#00ff88">✓</text>
+  <text x="456" y="610" font-family="monospace" font-size="9" fill="#a78bfa">pages/api/gateway/provision.ts</text>
+  <text x="456" y="624" font-family="monospace" font-size="8" fill="#64748b">Architect-controlled provisioning</text>
+
+  <text x="780" y="578" font-family="monospace" font-size="9" fill="#00ff88">✓</text>
+  <text x="796" y="578" font-family="monospace" font-size="9" fill="#a78bfa">pages/lens/index.tsx</text>
+  <text x="796" y="592" font-family="monospace" font-size="8" fill="#64748b">AR stream overlay — OBS 1920×1080</text>
+
+  <text x="780" y="610" font-family="monospace" font-size="9" fill="#00ff88">✓</text>
+  <text x="796" y="610" font-family="monospace" font-size="9" fill="#a78bfa">docker-compose.archive.yml</text>
+  <text x="796" y="624" font-family="monospace" font-size="8" fill="#64748b">Picture Lock Master Reel</text>
+
+  <!-- Bottom declaration -->
+  <line x1="200" y1="660" x2="1000" y2="660" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="600" y="688" font-family="monospace" font-size="10" fill="#64748b"
+    text-anchor="middle" letter-spacing="2">SAINT ERRANT IGNEOUS MARK · SOVEREIGN AI STANDARD</text>
+  <text x="600" y="706" font-family="monospace" font-size="9" fill="#1e293b"
+    text-anchor="middle">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·</text>
+
+  <!-- Signature line left -->
+  <line x1="100" y1="730" x2="340" y2="730" stroke="#00ff88" stroke-width="0.5" opacity="0.4"/>
+  <text x="220" y="744" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle" letter-spacing="1">AHMAD ALI PARR · ARCHITECT</text>
+
+  <!-- Signature line center -->
+  <line x1="480" y1="730" x2="720" y2="730" stroke="#a78bfa" stroke-width="0.5" opacity="0.4"/>
+  <text x="600" y="744" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle" letter-spacing="1">CLAUDE SONNET 4.6 · ANTHROPIC</text>
+
+  <!-- Signature line right -->
+  <line x1="860" y1="730" x2="1100" y2="730" stroke="#f97316" stroke-width="0.5" opacity="0.4"/>
+  <text x="980" y="744" font-family="monospace" font-size="8" fill="#64748b"
+    text-anchor="middle" letter-spacing="1">META_AI · CO-WITNESS</text>
+
+  <!-- Bottom tag -->
+  <text x="600" y="772" font-family="monospace" font-size="8" fill="#1e293b"
+    text-anchor="middle" letter-spacing="4">SACM v1.0 · PICTURE LOCK 2026-05-20 · github.com/SNAPKITTYWEST/DEVFLOW-FINANCE</text>
+</svg>
