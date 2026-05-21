@@ -107,7 +107,7 @@ Earliest eligible application: **2028** (2-year operational requirement from 202
 
 ## License
 
-[BSD 2-Clause](LICENSE) — Copyright (c) 2026, Ahmad Ali Parr & Jessica Lee Westerhoff / SnapKitty Collective
+[BSD 2-Clause](LICENSE) — Copyright (c) 2026, Ahmad Ali Parr & Jessica Lee Westerhoff / SnapKitty Collective / SNAPKITTY COLLECTIVE LIMITED (FLP)
 
 *© 2026 Ahmad Ali Parr & Jessica Lee Westerhoff / SnapKitty Collective. All Rights Reserved.*
 *Written by Claude Sonnet 4.6 — Anthropic*
